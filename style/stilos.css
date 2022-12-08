@@ -159,7 +159,7 @@ footer{
 }
 
 .pie__unirse a {
-    color: brown ;
+    color: rgb(109, 28, 28) ;
 }
 
 /* Directorio anime */
@@ -168,6 +168,10 @@ footer{
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+    transition: all 1s ;
+    margin: 0px auto;
+    max-width: 1500px;
+
 }
 .tarjeta{
     display: flex;
@@ -180,6 +184,10 @@ footer{
     border-radius: 15px;
     padding: 15px;
     transition: all 1s;
+}
+
+.tarjeta p {
+    text-align: justify;
 }
 
 .tarjeta:hover {
@@ -224,6 +232,7 @@ hr.rounded {
     color: black;
     margin: 40px;
     text-indent: 2em;
+    text-align: justify;
 }
 
 .texto-anime h3{
@@ -231,10 +240,22 @@ hr.rounded {
     margin: 15px;
 }
 
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+
+
+}
+.center tr td{
+    padding: 10px;
+    border: 1px solid #000000;
+    text-align: center;
+}
 .texto-anime__lista{
     display: flex;
     margin: 10px 40px;
-    outline: 1px solid black;
+    border: 1px solid black;
     display: inline-flex;
 
 }
@@ -263,6 +284,11 @@ hr.rounded {
     padding: 15px 0px;
 }
 
+iframe {
+    width: 560px;
+    height: 315px;
+}
+
 
 /* nosotros */
 .nosotros {
@@ -277,10 +303,10 @@ hr.rounded {
     border-radius: 20px;
     border-color: rgb(235, 229, 229);
     text-align: justify;
-    background-color: black; 
-    color: antiquewhite;
+    background-color: #000000; 
+    color: #faebd7;
     padding: 20px;
-    margin: 30px 0px;
+    margin: 30px 10px;
 }
 .nosotros__titulo {
     display: flex;     
@@ -294,7 +320,6 @@ text-align: center;
 margin: 0px auto;
 background-image: url(../images/collageanime2.jpg);
 background-size: cover;
-
 }
 .contact__form {
     padding: 20px;
@@ -329,4 +354,28 @@ background-size: cover;
     text-align: center;
 }
 
-@media (){}
+@media only screen and (max-width: 768px) {
+
+}
+
+
+@media only screen and (max-width: 576px){
+   .encabezado__contenido {
+    flex-direction: column;
+   }
+   .tarjeta {
+    width: 250px;
+   }
+   .titulo__text small {
+    display: none;
+   }
+   .videos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   iframe{
+    width: 450px;
+   }
+}
+
