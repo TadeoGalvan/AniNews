@@ -17,16 +17,16 @@
     font-weight: bold;
 }
 
-
 body{
     font-family: 'lato';
     background-color: #B6E2A1;
     color: black;
 }
-
 /* global */
+
 a {
     text-decoration: none;
+    color: #000000;
 }
 li {
     list-style-type: none;
@@ -35,11 +35,12 @@ li {
 /* Hero */
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(../images/collageanime2.jpg);
-    height: 500px;
+    height: 400px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    margin-top: 50px;
     
 }
 
@@ -55,10 +56,13 @@ li {
 
 /* encabezado */
 .encabezado {
-    background-color: #FFFBC1;
-    padding: 15px 10px;
+    /* background-color: #FFFBC1; */
+    background: rgb(222,222,222);
+    background: linear-gradient(180deg, rgba(222,222,222,1) 0%, rgba(255,251,193,1) 84%, rgba(214,252,196,1) 100%);    margin: 0 auto;
+    z-index: 100;
+    position: sticky;
+    top: 0px;
     max-width: 1200px;
-    margin: 0 auto;
 }
 
 .encabezado__contenido {
@@ -67,25 +71,60 @@ li {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #FFFBC1;
+}
+
+.encabezado__contenido-logo {
+    animation: ease-in anilogo 1s;
+    margin: 5px;
+}
+
+
+@keyframes anilogo {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform:scale(1);
+    }
 }
 
 .encabezado__contenido-menu {
     display: flex;
+    align-items: center;
 }
 
 .encabezado__contenido-menu li {
     margin: 0px 15px;
+    transition: all 0.1s;
+}
+.encabezado__contenido-menu li a{
+    transition: all 0.3s;
+}
+.encabezado__contenido-menu li a:hover {
+    color: rgb(109, 28, 28) ;
+}
+.encabezado__contenido-menu li:active {
+    transform: scale(0.9);
+    background-color: #B6E2A1;
+    border-radius: 10px;
+}
+
+.encabezado__contenido-menu li:nth-child(2) {
+    border: 1px solid #B6E2A1;
+    padding: 5px;
+    border-radius: 5px;
+
 }
 
 /* footer */
 footer{
     display: flex;
     justify-content: center;
+   
 }
 .footer {
-    background-color:rgb(255, 251, 193);
-    padding: 15px 10px;
+    background: rgb(136,136,136);
+    background: linear-gradient(0deg, rgba(136,136,136,1) 0%, rgba(255,251,193,1) 100%);     padding: 15px 10px;
     max-width: 1200px;
     margin: 0px auto;
     position: fixed;
@@ -94,13 +133,13 @@ footer{
 }
 
 .footer--directorio {
-    background-color:#FFFBC1;
+    background: rgb(136,136,136);
+    background: linear-gradient(0deg, rgba(136,136,136,1) 0%, rgba(255,251,193,1) 67%, rgba(205,255,181,1) 100%);
     padding: 15px 10px;
     max-width: 1200px;
     margin: 0px auto;
     width: 100%;
 }
-
 
 .pie {   
     display: flex;
@@ -119,11 +158,16 @@ footer{
     margin: 0px 15px;
 }
 
+.pie__unirse a {
+    color: brown ;
+}
+
 /* Directorio anime */
 .contenedortarjetas {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 10px;
 }
 .tarjeta{
     display: flex;
@@ -135,8 +179,12 @@ footer{
     height: 500px;
     border-radius: 15px;
     padding: 15px;
+    transition: all 1s;
 }
 
+.tarjeta:hover {
+    transform: scale(1.1);
+}
 
 .tarjeta__descripcion{
     overflow-y: scroll;
@@ -174,11 +222,21 @@ hr.rounded {
 
 .texto-anime {
     color: black;
+    margin: 40px;
+    text-indent: 2em;
+}
+
+.texto-anime h3{
+    text-align: center;
+    margin: 15px;
 }
 
 .texto-anime__lista{
     display: flex;
     margin: 10px 40px;
+    outline: 1px solid black;
+    display: inline-flex;
+
 }
 
 .texto-anime__lista li {
@@ -214,7 +272,7 @@ hr.rounded {
     margin: 30px 0px ;
 }
 .nosotros__texto {
-    width: 800px;
+    max-width: 800px;
     border: 10px;
     border-radius: 20px;
     border-color: rgb(235, 229, 229);
@@ -242,7 +300,7 @@ background-size: cover;
     padding: 20px;
     display: inline-block;
     border: 3px solid #000000;
-    border-radius: 2px;
+    border-radius: 10px;
     box-sizing: border-box;
     background-color: rgba(110, 107, 64, 0.75);
     color: rgb(255, 255, 255);
@@ -267,7 +325,7 @@ background-size: cover;
 }
 
 .contacto--texto {
-    margin: 20px 0px 50px 0px;
+    margin: 20px 0px 30px 0px;
     text-align: center;
 }
 
