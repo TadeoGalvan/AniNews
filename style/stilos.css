@@ -17,9 +17,6 @@
     font-weight: bold;
 }
 
-@media () {
-    
-}
 
 body{
     font-family: 'lato';
@@ -39,7 +36,6 @@ li {
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(../images/collageanime2.jpg);
     height: 500px;
-    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -55,12 +51,6 @@ li {
     transform: translate(-50%, -50%);
     color: whitesmoke;
 }
-
-
-
-
-
-
 
 
 /* encabezado */
@@ -94,7 +84,7 @@ footer{
     justify-content: center;
 }
 .footer {
-    background-color:#FFFBC1;
+    background-color:rgb(255, 251, 193);
     padding: 15px 10px;
     max-width: 1200px;
     margin: 0px auto;
@@ -239,9 +229,46 @@ hr.rounded {
     align-items: center;
 }
 
+/* contacto */
+
 .contacto {
-    display: block;
-    border: 3px;
+text-align: center;
+margin: 0px auto;
+background-image: url(../images/collageanime2.jpg);
+background-size: cover;
+
+}
+.contact__form {
+    padding: 20px;
+    display: inline-block;
+    border: 3px solid #000000;
     border-radius: 2px;
     box-sizing: border-box;
+    background-color: rgba(110, 107, 64, 0.75);
+    color: rgb(255, 255, 255);
 }
+
+.contact__form--datos {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.contact__form--datos input {
+    width: 300px;
+    height: 20px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.contact__form--comentarios {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto--texto {
+    margin: 20px 0px 50px 0px;
+    text-align: center;
+}
+
+@media (){}

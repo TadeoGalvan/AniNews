@@ -22,25 +22,32 @@
     </header>
     
     <body>
-        <h3>Se parte de nuestra comunidad.</h3>
-        <p>Enterate junto a nosotros de las novedades de las ultimas temporadas del anime.</p>
+        <div class="contacto--texto">
+            <h3>Se parte de nuestra comunidad.</h3>
+            <p>Enterate junto a nosotros de las novedades de las ultimas temporadas del anime.</p>    
+        </div>
         <div class="contacto">
-            <form >
-                <input type="text" id="nombre" placeholder="Ingrese su nombre" />
-                <input type="email" placeholder="Ingrese su correo" />
-                <input type="password" placeholder="Ingrese su contraseña" />
-                <input type="password" placeholder="Repita su contraseña" />
-                <br>
-                <label for="comentarios">Comentarios</label>
-                <br>
-                <textarea name="comentarios" id="" cols="30" rows="10" placeholder="Deje aqui sus comentarios"></textarea>
-                <br/>
-                <input type="checkbox" />
-                <label for="novedades">Le guistaria recivir novedades?</label>        
-                <input type="checkbox" id="terminos" /> 
-                <label for="terminos">Acepto términos y condiciones</label>        
-                <button>Enviar</button>
-                <button type="reset">Limpiar</button>
+            <form class="contact__form">
+                <div class="contact__form--datos">
+                    <input type="text" id="nombre" placeholder="Ingrese su nombre" />
+                    <input type="email" placeholder="Ingrese su correo" />
+                    <input type="password" placeholder="Ingrese su contraseña" />
+                    <input type="password" placeholder="Repita su contraseña" />      
+                </div>
+                <div class="contact__form--comentarios">
+                    <label for="comentarios">Comentarios</label>
+                    <textarea name="comentarios" id="" cols="30" rows="10" placeholder="Deje aqui sus comentarios"></textarea>
+                    <div>
+                        <input type="checkbox" />
+                        <label for="novedades">Le guistaria recibir novedades?</label>        
+                    </div>
+                    <div>
+                        <input type="checkbox" id="terminos" /> 
+                        <label for="terminos">Acepto términos y condiciones</label>            
+                    </div>
+                    <button>Enviar</button>
+                    <button type="reset">Limpiar</button>
+                </div>
             </form>
         </div>
     </body>
