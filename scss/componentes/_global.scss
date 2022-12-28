@@ -1,0 +1,34 @@
+/* selector universar */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'lato';
+    src: url('../tipografias/NotoSans-Regular.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lato';
+    src: url('../tipografias/NotoSans-Bold.ttf');
+    font-weight: bold;
+}
+
+body{
+    font-family: 'lato';
+    background-color: #B6E2A1;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+li {
+    list-style-type: none;
+}
+
+// Extends

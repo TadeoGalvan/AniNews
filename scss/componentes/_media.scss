@@ -1,0 +1,25 @@
+@media only screen and (max-width: 768px) {
+
+}
+
+
+@media only screen and (max-width: 576px){
+   .encabezado__contenido {
+    flex-direction: column;
+   }
+   .tarjeta {
+    width: 250px;
+   }
+   .titulo__text small {
+    display: none;
+   }
+   .videos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   iframe{
+    width: 450px;
+   }
+}
+

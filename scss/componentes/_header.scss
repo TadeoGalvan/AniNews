@@ -1,0 +1,58 @@
+/* encabezado */
+.encabezado {
+    /* background-color: #FFFBC1; */
+    background: rgb(222, 222, 222);
+    background: linear-gradient(180deg, rgba(222,222,222,1) 0%, rgba(255,251,193,1) 84%, rgba(214,252,196,1) 100%);    margin: 0 auto;
+    z-index: 100;
+    position: sticky;
+    top: 0px;
+    max-width: 1200px;
+
+        &__contenido {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            
+                &-logo {
+                    animation: ease-in anilogo 1s;
+                    margin: 5px;                   
+                }
+                
+                &-menu {
+                    display: flex;
+                    align-items: center;
+                        li {
+                            margin: 0px 15px;
+                            transition: all 0.1s;  
+                                &:active {
+                                    transform: scale(0.9);
+                                    background-color: #B6E2A1;
+                                    border-radius: 10px;
+                                }   
+                                &:nth-child(2) {
+                                    border: 1px solid #B6E2A1;
+                                    padding: 5px;
+                                    border-radius: 5px;                            
+                                }
+                                a {
+                                    transition: all 0.3s;
+                                        &:hover {
+                                            color: rgb(109, 28, 28) ;
+                                        }
+                                }
+                        }
+                }
+        }
+}
+
+@keyframes anilogo {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform:scale(1);
+    }
+}
+

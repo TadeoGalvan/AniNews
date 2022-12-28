@@ -1,0 +1,44 @@
+/* footer */
+footer{
+    display: flex;
+    justify-content: center;
+}
+.footer {
+    background: rgb(136,136,136);
+    background: linear-gradient(0deg, rgba(136,136,136,1) 0%, rgba(255,251,193,1) 100%);     padding: 15px 10px;
+    max-width: 1200px;
+    margin: 0px auto;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer--directorio {
+    background: rgb(136,136,136);
+    background: linear-gradient(0deg, rgba(136,136,136,1) 0%, rgba(255,251,193,1) 67%, rgba(205,255,181,1) 100%);
+    padding: 15px 10px;
+    max-width: 1200px;
+    margin: 0px auto;
+    width: 100%;
+}
+
+.pie {   
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0px auto;
+    justify-content: space-between;
+
+        &__unirse{
+                a {
+                    color: rgb(109, 28, 28) ;
+                }
+        }
+        &__redes {
+            display: flex;
+                li{
+                    margin: 0px 15px;
+                }
+        }
+}
+
