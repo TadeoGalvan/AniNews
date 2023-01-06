@@ -25,7 +25,7 @@
                 tr td{
                     padding: 10px;
                     border: 1px solid #000000;
-                    text-align: center;                
+                    text-align: center;
                 }     
         }
 }
@@ -42,18 +42,22 @@
             width: 800px; 
         }
         &__imagen{
-            background-image: url(../images/separadorboku.jpg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            background-attachment: fixed;
+            // background-image: url(../images/separadorboku.jpg);
+            // background-repeat: no-repeat;
+            // background-position: center;
+            // background-size: cover;
+            // background-attachment: fixed;
             width: 1200px;
-            height: 50px;
+            height: 150px;
             margin-top: 5px;        
         }
 }
-
+.videos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 iframe {
-    width: 560px;
+    width: 500px;
     height: 315px;
 }

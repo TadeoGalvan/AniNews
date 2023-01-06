@@ -17,7 +17,9 @@
 body {
   font-family: 'lato';
   background-color: #B6E2A1;
-  color: black; }
+  color: black;
+  max-width: 1200px;
+  margin: 0px auto; }
 
 a {
   text-decoration: none;
@@ -106,8 +108,22 @@ footer {
     .pie__redes li {
       margin: 0px 15px; }
 
+.separador__boku {
+  background-image: url(../images/separadorboku.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.separador__kage {
+  background-image: url(../images/separadorkagenojitsu.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
+
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/collageanime2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/collageanime2.jpg);
   height: 400px;
   background-position: center;
   background-repeat: no-repeat;
@@ -142,12 +158,25 @@ footer {
   border-radius: 15px;
   padding: 15px;
   transition: all 1s;
-  margin: 10px; }
+  margin: 10px;
+  justify-content: space-between; }
   .tarjeta__descripcion {
     overflow-y: scroll;
-    text-align: justify; }
+    text-align: justify;
+    font-size: 13px;
+    margin: 5px; }
+  .tarjeta__imagen {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center; }
   .tarjeta:hover {
     transform: scale(1.1); }
+  .tarjeta a {
+    color: #6d1c1c;
+    background-color: #d2fabe;
+    border-radius: 5px;
+    margin: 20px; }
 
 .titulo {
   display: flex;
@@ -185,17 +214,17 @@ footer {
     border-radius: 5px;
     width: 800px; }
   .separador__imagen {
-    background-image: url(../images/separadorboku.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
     width: 1200px;
-    height: 50px;
+    height: 150px;
     margin-top: 5px; }
 
+.videos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
 iframe {
-  width: 560px;
+  width: 500px;
   height: 315px; }
 
 .nosotros {
