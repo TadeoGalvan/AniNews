@@ -40,7 +40,6 @@ li {
   max-width: 1200px; }
   .encabezado__contenido {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto; }
@@ -48,22 +47,24 @@ li {
       animation: ease-in anilogo 1s;
       margin: 5px; }
     .encabezado__contenido-menu {
+      flex-grow: initial; }
+    .encabezado__contenido-menu ul {
       display: flex;
       align-items: center; }
-      .encabezado__contenido-menu li {
+      .encabezado__contenido-menu ul li {
         margin: 0px 15px;
         transition: all 0.1s; }
-        .encabezado__contenido-menu li:active {
+        .encabezado__contenido-menu ul li:active {
           transform: scale(0.9);
           background-color: #B6E2A1;
           border-radius: 10px; }
-        .encabezado__contenido-menu li:nth-child(2) {
+        .encabezado__contenido-menu ul li:nth-child(2) {
           border: 1px solid #B6E2A1;
           padding: 5px;
           border-radius: 5px; }
-        .encabezado__contenido-menu li a {
+        .encabezado__contenido-menu ul li a {
           transition: all 0.3s; }
-          .encabezado__contenido-menu li a:hover {
+          .encabezado__contenido-menu ul li a:hover {
             color: #6d1c1c; }
 
 @keyframes anilogo {
@@ -108,121 +109,140 @@ footer {
     .pie__redes li {
       margin: 0px 15px; }
 
+.bi {
+  font-size: 2rem; }
+
 .separador__boku {
   background-image: url(../images/separadorboku.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  width: 100%; }
 
 .separador__kage {
   background-image: url(../images/separadorkagenojitsu.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  width: 100%; }
 
 .separador__arknights {
   background-image: url(../images/separadorarknightsaeimeiaensou.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  width: 100%; }
 
 .separador__chainsaw {
   background-image: url(../images/separadorchainsawman.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  width: 100%; }
 
 .separador__fuufuijou {
   background-image: url(../images/separadorfuufuijou.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  width: 100%; }
 
 .separador__gwitch {
   background-image: url(../images/separadorgwitch.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  width: 100%; }
 
 .separador__spyx {
   background-image: url(../images/separadorspyxfamily.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  width: 100%; }
 
 .separador__tenken {
   background-image: url(../images/separadortenken.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  width: 100%; }
 
 .separador__mob3 {
   background-image: url(../images/separadormob3.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  width: 100%; }
 
 .separador__bluelock {
   background-image: url(../images/separadorbluelock.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  width: 100%; }
 
 .separador__numinkanren {
   background-image: url(../images/separadornuminkanrennoskill.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  width: 100%; }
 
 .separador__beasttamer {
   background-image: url(../images/separadorbeasttamer.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  width: 100%; }
 
 .separador__uzakidouble {
   background-image: url(../images/separadoruzakidouble.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  width: 100%; }
 
 .separador__iruma3 {
   background-image: url(../images/separadoriruma3.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  width: 100%; }
 
 .separador__petergrillsuperextra {
   background-image: url(../images/separadorpetergrillsuperextra.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  width: 100%; }
 
 .separador__bleachsennen {
   background-image: url(../images/separadorbleachsennen.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  width: 100%; }
 
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/collageanime2.jpg);
-  height: 400px;
+  height: 500px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -235,7 +255,8 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: whitesmoke; }
+  color: whitesmoke;
+  width: 70%; }
 
 .contenedortarjetas {
   display: flex;
@@ -251,7 +272,7 @@ footer {
   flex-direction: column;
   align-content: center;
   background-color: #f5f5f5;
-  width: 300px;
+  width: 350px;
   height: 500px;
   border-radius: 15px;
   padding: 15px;
@@ -319,12 +340,7 @@ footer {
     height: 150px;
     margin-top: 5px; }
 
-.videos {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around; }
-
-iframe {
+.iframe {
   width: 500px;
   height: 315px; }
 
@@ -378,16 +394,51 @@ iframe {
       display: flex;
       flex-direction: column; }
 
-@media only screen and (max-width: 576px) {
-  .encabezado__contenido {
-    flex-direction: column; }
+@media only screen and (max-width: 1200px) {
+  .separador__imagen {
+    width: max-content; }
+  .separador__linea {
+    width: 100%; } }
+
+@media only screen and (max-width: 992px) {
+  .titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .titulo__text {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center; }
   .tarjeta {
-    width: 250px; }
-  .titulo__text small {
-    display: none; }
+    width: 350px; }
+  .separador__imagen {
+    width: max-content; }
+  .separador__linea {
+    width: 100%; } }
+
+@media only screen and (max-width: 768px) {
+  .tarjeta {
+    width: 400px; }
+  .separador__imagen {
+    width: max-content; }
+  .separador__linea {
+    width: 100%; } }
+
+@media only screen and (max-width: 576px) {
+  .tarjeta {
+    width: 350px; }
   .videos {
     display: flex;
     flex-direction: column;
     align-items: center; }
   iframe {
-    width: 450px; } }
+    width: 450px; }
+  .pie__unirse {
+    display: none; }
+  .pie__redes {
+    margin: 0 auto; }
+  .separador__imagen {
+    width: max-content; }
+  .separador__linea {
+    width: 100%; } }

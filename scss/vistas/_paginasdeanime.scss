@@ -56,12 +56,14 @@
             margin-top: 5px;        
         }
 }
-.videos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-iframe {
+// .videos {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-around;
+// }
+.iframe{
     width: 500px;
     height: 315px;
 }
+
+
