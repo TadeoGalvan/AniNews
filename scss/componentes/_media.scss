@@ -34,8 +34,6 @@
          width: 100%;
       }
    }
-  
-
 }
 
 
@@ -44,8 +42,8 @@
 @media only screen and (max-width: 768px) {
    .tarjeta {
       width: 400px;
-     }
-     .separador{
+   }
+   .separador{
       &__imagen{
          width: max-content;
       }
@@ -53,29 +51,27 @@
          width: 100%;
       }
    }
-
-  
 }
 
 
 @media only screen and (max-width: 576px){
    .tarjeta {
-    width: 350px;
+      width: 350px;
    }
    .videos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
    }
    iframe{
-    width: 450px;
+      width: 450px;
    }
    .pie{
       &__unirse{
          display: none;
       }
       &__redes{
-        margin: 0 auto;
+         margin: 0 auto;
       }
    }
    .separador{

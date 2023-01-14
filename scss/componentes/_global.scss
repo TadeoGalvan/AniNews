@@ -18,19 +18,37 @@
 }
 
 body{
+    @extend .contenido;
     font-family: 'lato';
-    background-color: #B6E2A1;
-    color: black;
-    max-width: 1200px;
-    margin: 0px auto;
+    background-color: $backgroundbody;
+    color: $fontcolor;
 }
 
 a {
     text-decoration: none;
-    color: #000000;
+    color: $fontcolor;
 }
 li {
     list-style-type: none;
 }
 
 // Extends
+
+.imagenseparador{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+.contenido{
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.flexcolumn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

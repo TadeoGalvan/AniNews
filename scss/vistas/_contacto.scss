@@ -17,8 +17,7 @@
             background-color: rgba(110, 107, 64, 0.75);
             color: rgb(255, 255, 255);
                 &--datos{
-                    display: flex;
-                    flex-direction: column;
+                    @extend .flexcolumn;
                     padding-bottom: 20px;  
                         input{
                             width: 300px;
@@ -29,7 +28,7 @@
                 }
                 &--comentarios{
                     display: flex;
-                    flex-direction: column;            
+                    flex-direction: column; 
                 }
         }
     }

@@ -4,7 +4,7 @@
     margin: 10px 60px ;
         &__text{
             margin: 0px 60px;
-            color: black;
+            color: $fontcolor;
         }
         &__imege {
             width: 300px;
@@ -14,7 +14,7 @@
 
 
 .texto-anime {
-    color: black;
+    color:$fontcolor;
     margin: 40px;
     text-indent: 2em;
     text-align: justify;
@@ -36,9 +36,7 @@
 
     /* separador   */
 .separador{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend .flexcolumn;
     padding: 15px 0px;
         &__linea{
             border-top: 8px solid rgb(129, 121, 121);
@@ -46,21 +44,12 @@
             width: 800px; 
         }
         &__imagen{
-            // background-image: url(../images/separadorboku.jpg);
-            // background-repeat: no-repeat;
-            // background-position: center;
-            // background-size: cover;
-            // background-attachment: fixed;
             width: 1200px;
             height: 150px;
             margin-top: 5px;        
         }
 }
-// .videos {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-around;
-// }
+
 .iframe{
     width: 500px;
     height: 315px;

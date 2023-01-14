@@ -1,17 +1,13 @@
 .contenedortarjetas {
+    @extend .contenido;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
     transition: all 1s ;
-    margin: 0px auto;
-    max-width: 1500px;
-      
 }
 .tarjeta{
-   
-    display: flex;
-    flex-direction: column;
+    @extend .flexcolumn;
     align-content: center;
     background-color: #f5f5f5;
     width: 350px;
@@ -21,7 +17,7 @@
     transition: all 1s;
     margin: 10px;
     justify-content: space-between;
-       
+    
         &__descripcion{
             overflow-y: scroll;
             text-align: justify;
@@ -29,9 +25,7 @@
             margin: 5px;
         }
         &__imagen{
-            display: flex;
-            align-items: center;
-            flex-direction: column;
+            @extend .flexcolumn;
             align-content: center;
         
         }
@@ -39,7 +33,7 @@
             transform: scale(1.1);
         }
         a{
-            color: rgb(109, 28, 28);
+            color: $anchor;
             background-color: #d2fabe;
             border-radius: 5px;
             margin: 20px;
