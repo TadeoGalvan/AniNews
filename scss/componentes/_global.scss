@@ -9,12 +9,14 @@
     font-family: 'lato';
     src: url('../tipografias/NotoSans-Regular.ttf');
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'lato';
     src: url('../tipografias/NotoSans-Bold.ttf');
     font-weight: bold;
+    font-display: swap;
 }
 
 body{
